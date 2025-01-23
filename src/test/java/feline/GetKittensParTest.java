@@ -20,7 +20,7 @@ public class GetKittensParTest {
         this.expected = expected;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: kittensCount={0}, expected={1}")
     public static Object[][] getKittens(){
         return new Object[][]{
                 {0, 0},

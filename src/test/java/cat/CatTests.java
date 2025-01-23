@@ -14,7 +14,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
-public class GetFoodTest {
+public class CatTests {
 
     @Mock
     private Feline feline;
@@ -23,13 +23,19 @@ public class GetFoodTest {
     @Before
     public void setUp() throws Exception{
         cat = new Cat(feline);
-        Mockito.when(feline.eatMeat()).thenReturn(List.of("Мясо", "Мясо", "Мясо"));
+        Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
     }
 
     @Test
     public void runGetFoodTest() throws Exception{
-        List<String> expected = List.of("Мясо", "Мясо", "Мясо");
+        List<String> expected = List.of("Животные", "Птицы", "Рыба");
         List<String> actual = cat.getFood();
-        assertEquals(expected, actual);
+        assertEquals("Ожидался другой набор пищи", expected, actual);
+    }
+
+    @Test
+    public void runGetSoundTest(){
+        String actual = cat.getSound();
+        assertEquals("Ожидался другой звук","Мяу", actual);
     }
 }

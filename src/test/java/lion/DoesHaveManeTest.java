@@ -25,7 +25,7 @@ public class DoesHaveManeTest {
         this.expected = expected;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: sex={0}, expected={1}")
     public static Object[][] getLionsGender() {
         return new Object[][]{
                 //Пол животного
