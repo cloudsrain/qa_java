@@ -1,6 +1,4 @@
-package liontests;
-
-import static org.junit.Assert.assertEquals;
+package lion;
 
 import com.example.Feline;
 import com.example.Lion;
@@ -12,6 +10,8 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class GetFoodTest {

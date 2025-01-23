@@ -1,6 +1,4 @@
-package cattests;
-
-import static org.junit.Assert.assertEquals;
+package cat;
 
 import com.example.Cat;
 import com.example.Feline;
@@ -12,6 +10,8 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class GetFoodTest {

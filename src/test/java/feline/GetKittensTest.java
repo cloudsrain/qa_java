@@ -1,9 +1,10 @@
-package felinetest;
+package feline;
 
-import static org.junit.Assert.assertEquals;
 import com.example.Feline;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class GetKittensTest {
 

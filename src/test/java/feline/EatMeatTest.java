@@ -1,11 +1,12 @@
-package felinetest;
-
-import static org.junit.Assert.assertEquals;
+package feline;
 
 import com.example.Feline;
 import org.junit.Before;
 import org.junit.Test;
+
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class EatMeatTest {
 

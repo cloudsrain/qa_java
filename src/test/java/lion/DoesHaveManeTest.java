@@ -1,6 +1,5 @@
-package liontests;
+package lion;
 
-import static org.junit.Assert.assertEquals;
 import com.example.Feline;
 import com.example.Lion;
 import org.junit.Before;
@@ -9,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class DoesHaveManeTest {
